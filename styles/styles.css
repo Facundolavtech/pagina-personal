@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   position: relative;
@@ -16,9 +20,12 @@ img {
 }
 
 header {
+  position: fixed;
   width: 100%;
   background-color: #360442;
   height: 100px;
+  top: 0;
+  z-index: 1000;
 }
 header .header__container {
   width: 80%;
@@ -36,7 +43,7 @@ header .header__container .header__nav {
   top: 100px;
   left: 0;
   margin: auto;
-  background-color: rgba(54, 4, 66, 0.95);
+  background-color: rgb(54, 4, 66);
   border-bottom: 2px solid #fff;
 }
 header .header__container .header__nav ul {
@@ -91,6 +98,7 @@ header .header__container .open:checked ~ .nav__hidden {
   visibility: visible;
   transition: opacity 0.2s, visibility 0.2s;
 }
+
 header .header__container .btnMenu {
   display: block;
   width: 25px;
@@ -128,6 +136,7 @@ header .githubBtn i {
 .hero {
   width: 100%;
   padding: 40px 0;
+  margin-top: 100px;
   margin-bottom: 100px;
   text-align: center;
   background: url(../assets/img/hero-bg.svg);
@@ -166,7 +175,7 @@ header .githubBtn i {
 }
 .about__me p {
   color: #5e5d5d;
-  font-size: 0.9em;
+  font-size: 0.8em;
 }
 .about__me-icon i {
   color: #fff;
@@ -187,18 +196,18 @@ header .githubBtn i {
 .portfolio .portfolio__container h2 {
   font-size: 1.5em;
   color: #fff;
+  margin: 0 auto;
   margin-bottom: 50px;
 }
 .portfolio .portfolio__container .ViewMore-Btn {
   position: absolute;
+  left: 0;
+  right: 0;
   bottom: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 20px;
   margin: auto;
-  left: 0;
-  right: 0;
   min-width: 200px;
   width: 200px;
   font-size: 0.9em;
@@ -385,6 +394,7 @@ footer a:last-child:hover i {
     justify-content: center;
   }
   .about__me-info h2, .about__me-info p {
+    text-align: initial;
     width: 80%;
   }
   .about__me-icon {
