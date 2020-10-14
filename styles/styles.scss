@@ -13,6 +13,10 @@ $LightGrey: rgb(94, 93, 93);
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     margin: 0;
     position: relative;
@@ -44,7 +48,7 @@ header{
             top: 100px;
             left: 0;
             margin: auto;
-            background-color: rgba(54, 4, 66, 0.950);
+            background-color: rgb(54, 4, 66);
             border-bottom: 2px solid #fff;
 
             ul{
@@ -200,7 +204,8 @@ header{
 
     p{
         color: $LightGrey;
-        font-size: .9em;
+        line-height: 25px;
+        font-size: .8em;
     }
 
     &-icon{
@@ -363,6 +368,112 @@ footer{
     }
 }
 
+.portfolio-page__title{
+    width: 100%;
+    background-color: #fff;
+    padding: 0 30px;
+    height: 100px;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h1{
+        font-size: 1.5em;
+        color: #fff;
+        background-color: $Grey;
+        padding: 5px;
+        margin-right: 100px;
+    }
+
+    .btnHome{
+        text-decoration: none;
+        font-weight: lighter;
+        color: #222;
+        font-size: .9em;
+    }
+}
+
+.proyects__container{
+    width: 100%;
+    padding: 0 0 100px 0;
+    display: flex;
+    flex-direction: column;
+
+    .proyect{
+        width: 80%;
+        margin: auto;
+        margin-top: 100px;
+        height: 350px;
+        background-color: red;
+        // border-radius: 10px;
+
+        &:last-of-type{
+            margin-bottom: 100px;
+        }
+
+        .proyect__title{
+            height: 20%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 0;
+            width: 100%;
+            background-color: $Grey;
+            text-align: center;
+            color: #fff;
+            // border-radius: 10px 10px 0 0;
+            border-bottom: 3px solid #fff;
+        }
+
+        .proyect__miniature{
+            width: 100%;
+            height: 70%;
+            
+            img{
+                width: 100%;
+                min-width: 100%;
+                height: 100%;
+                object-fit: cover;
+                background-size: contain;
+                // background-position: center;
+            }
+        }
+
+        .proyect__techs{
+            width: 100%;
+            height: 10%;
+            display: flex;
+            padding-left: 10px;
+            align-items: center;
+            justify-content: flex-start;
+            background-color: #fff;
+            // border: 3px solid $Grey;
+
+            img{
+                width: 25px;
+                height: 25px;
+                object-fit: cover;
+            }
+        }
+
+        .enterSite{
+            width: 100%;
+            height: 40px;
+            display: block;
+            background-color: $Grey;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding-left: 10px;
+            color: #fff;
+            font-size: .9em;
+        }
+    }
+}
+
 @media screen and (min-width: 728px){
     .hero{
         &__container{
@@ -370,6 +481,20 @@ footer{
                 width: 50%;
                 font-size: 1.8em;
             }
+        }
+    }
+
+    .portfolio-page__title{
+        width: 80%;
+    }
+
+    .proyects__container{
+        width: 80%;
+        margin: auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        .proyect{
+            width: 40%;
         }
     }
 }
@@ -542,5 +667,19 @@ footer{
 
         }
     }
+
+    .portfolio-page__title{
+        width: 70%;
+    }
+
+    .proyects__container{
+        width: 80%;
+        .proyect{
+            width: 30%;
+        }
+    }
 }
+
+
+
     
