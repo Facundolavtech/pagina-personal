@@ -115,7 +115,7 @@ header .githubBtn {
   text-decoration: none;
   font-weight: bold;
   color: #fff;
-  padding-right: 13px;
+  padding-right: 17px;
   background-color: #242424;
   border: 2px solid #fff;
 }
@@ -495,7 +495,8 @@ footer a:last-child:hover i {
     flex-direction: column;
     justify-content: center;
   }
-  .about__me-info h2, .about__me-info p {
+  .about__me-info h2,
+  .about__me-info p {
     width: 80%;
   }
   .about__me-icon {
