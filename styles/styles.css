@@ -104,8 +104,8 @@ header .header__container .btnMenu {
   transition: background 0.1s;
 }
 header .githubBtn {
-  min-width: 225px;
-  width: 225px;
+  min-width: 220px;
+  width: 220px;
   position: relative;
   display: flex;
   align-items: center;
@@ -115,7 +115,7 @@ header .githubBtn {
   text-decoration: none;
   font-weight: bold;
   color: #fff;
-  padding-right: 25px;
+  padding-right: 15px;
   background-color: #242424;
   border: 2px solid #fff;
 }
@@ -127,7 +127,7 @@ header .githubBtn i {
   position: absolute;
   left: 5%;
   font-size: 22px;
-  margin-right: 8px;
+  margin-right: 6px;
 }
 
 .hero {
