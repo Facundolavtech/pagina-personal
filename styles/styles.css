@@ -127,6 +127,7 @@ header .githubBtn i {
   position: absolute;
   left: 5%;
   font-size: 22px;
+  margin-right: 8px;
 }
 
 .hero {
