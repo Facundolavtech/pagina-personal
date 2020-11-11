@@ -104,8 +104,8 @@ header .header__container .btnMenu {
   transition: background 0.1s;
 }
 header .githubBtn {
-  min-width: 200px;
-  width: 200px;
+  min-width: 210px;
+  width: 210px;
   position: relative;
   display: flex;
   align-items: center;
@@ -115,7 +115,7 @@ header .githubBtn {
   text-decoration: none;
   font-weight: bold;
   color: #fff;
-  padding-right: 10px;
+  padding-right: 13px;
   background-color: #242424;
   border: 2px solid #fff;
 }
