@@ -380,12 +380,14 @@ footer a:last-child:hover i {
   padding-left: 10px;
   align-items: center;
   justify-content: flex-start;
-  background-color: #fff;
+  background-color: rgb(54, 4, 66);
+  border-bottom: 2px solid #fff;
 }
 .proyects__container .proyect .proyect__techs img {
   width: 25px;
   height: 25px;
   object-fit: cover;
+  margin-right: 5px;
 }
 .proyects__container .proyect .enterSite {
   width: 100%;
